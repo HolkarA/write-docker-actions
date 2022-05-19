@@ -38,3 +38,8 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+      
+      - name: "hello-action"
+        uses: ./.github/actions/hello-world
+        with:
+          firstGreeting: "Learning Lab User"
